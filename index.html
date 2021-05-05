@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive pricing component</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+  <link rel="StyleSheet" href="styles.css">
+</head>
+<body>
+  <div class="back-wraper">
+    <img class="back-img" src="./images/bg-pattern.svg">
+  </div>
+  <div class="top-section">
+    <h1>Simple, traffic-based pricing</h1>
+    <p>Sign-up for our 30-day trial. No credit card required. </p>
+  </div>
+  <div id="card">
+    <div class="bill-measures">
+      <p id="followers">Pageviews</p>
+      <p id="money"><strong>$</strong> </p>
+      <p class="stick">/month</p>
+    </div>
+    <div class="slider">
+      <input class="insider" type="range" min="0" max="100" value="50" id="myRange">
+      <div id="selector">
+        <div class="selectorBtn"></div>
+      </div>
+      <div id="progress"></div>
+    </div>
+    <div class="BILLING">
+      <p>Mountly Billing</p>
+      <label class="switch" for="checked">
+        <input class="toggle--input" type="checkbox" id="checked" onClick="val()" >
+        <div class="togfil"></div>
+      </label>
+      <p>Yearly Billing</p>
+      <p class="appear">25% discount</p>
+    </div>
+    <hr>
+    <div class="bottom">
+      <ul>
+        <li>Unlimited websites</li>
+        <li>100% data ownership</li>
+        <li>Email reports</li>
+      </ul>
+      <button class="btn" type="btn">Start my trial</button>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Thato Tsotetsi</a>.
+  </div>
+
+  <script src="./images/index.js"></script>
+</body>
+</html>
